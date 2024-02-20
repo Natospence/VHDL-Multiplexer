@@ -1,0 +1,19 @@
+module Lab8Part4(
+
+);
+
+reg [2:0] position;
+
+always@(posedge CLOCK_50)
+begin
+
+	//Update the display
+
+	position = position + 1;
+
+	if(position > 5)
+		position = 0;
+
+end
+
+endmodule

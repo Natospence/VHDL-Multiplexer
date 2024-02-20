@@ -1,0 +1,130 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/MTU Semester VI/EE2174 Digital Logic/Lab/Lab8/src/simulation/qsim
+vhard_block
+Z1 !s110 1679344027
+!i10b 1
+!s100 `mQ=@I4NjT8b15;2`>^ER3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+II?b2iMQ_PhENezhKTLPd71
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1679344028
+Z5 8Lab8.vo
+Z6 FLab8.vo
+!i122 16
+L0 372 45
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1679344027.000000
+Z9 !s107 Lab8.vo|
+Z10 !s90 -work|work|Lab8.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vMUX2to1
+!s110 1679343236
+!i10b 1
+!s100 dComO?2bTP42KTBHVH4aL3
+R2
+Ig_Y0V_zcK3<82MCUaPJdm2
+R3
+R0
+Z13 w1679343236
+R5
+R6
+!i122 2
+L0 32 213
+R7
+r1
+!s85 0
+31
+!s108 1679343236.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@m@u@x2to1
+vMUX2to1_vlg_vec_tst
+!s110 1679343237
+!i10b 1
+!s100 ;ZkW_G?^U8;PzehmL61jQ3
+R2
+IznfR=hWAEgoV[EziNLNI32
+R3
+R0
+R13
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+!i122 3
+L0 30 46
+R7
+r1
+!s85 0
+31
+!s108 1679343237.000000
+!s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@m@u@x2to1_vlg_vec_tst
+vMUX3bit2to1
+R1
+!i10b 1
+!s100 6Di9eCWm_WHCS]GQJi;<30
+R2
+IWC8SAbE0KmgX9NZJ`GjVe0
+R3
+R0
+R4
+R5
+R6
+!i122 16
+L0 32 339
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@m@u@x3bit2to1
+vMUX3bit2to1_vlg_vec_tst
+!s110 1679344028
+!i10b 1
+!s100 ;=J=kjmeELgI8CnlB>V1c2
+R2
+ImG4mFCO[CjWnkhdF48Q8k1
+R3
+R0
+w1679344026
+R14
+R15
+!i122 17
+L0 30 60
+R7
+r1
+!s85 0
+31
+!s108 1679344028.000000
+Z17 !s107 Waveform.vwf.vt|
+R16
+!i113 1
+R11
+R12
+n@m@u@x3bit2to1_vlg_vec_tst

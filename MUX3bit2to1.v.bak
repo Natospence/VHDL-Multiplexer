@@ -1,0 +1,27 @@
+//3-bit 2 to 1 Multiplexer
+module MUX3bit2to1(
+input [2:0] A, B,
+input S,
+output reg [2:0] out);
+
+	//Outputs A or B based on
+	//the value of the select bit (S).
+
+	always@(S)
+	begin
+
+		if(S)
+		begin
+			assign out = A;
+		end
+
+		else
+
+		begin
+			assign out = B;
+		end
+
+	end
+
+
+endmodule

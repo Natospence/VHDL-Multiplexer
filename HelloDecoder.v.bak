@@ -1,0 +1,19 @@
+//Hello decoder
+module HelloDecoder(
+input [2:0] num,
+output reg [6:0] display);
+
+	always@(num)
+	begin
+		case(num)
+
+			3'b000: display = 7'b1001000    //Display H
+			3'b001: display = 7'b0110000    //Display E
+			3'b010: display = 7'b1110001    //Display L
+			3'b011: display = 7'b0000001    //Display O
+			default: display = 7'b1111111;  //Display nothing
+
+		endcase
+	end
+
+endmodule

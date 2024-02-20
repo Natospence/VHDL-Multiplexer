@@ -1,0 +1,955 @@
+|Lab8Part4
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => SW[0].IN1
+HEX0[0] << Lab8Part3:control.HEX0
+HEX0[1] << Lab8Part3:control.HEX0
+HEX0[2] << Lab8Part3:control.HEX0
+HEX0[3] << Lab8Part3:control.HEX0
+HEX0[4] << Lab8Part3:control.HEX0
+HEX0[5] << Lab8Part3:control.HEX0
+HEX0[6] << Lab8Part3:control.HEX0
+HEX1[0] << Lab8Part3:control.HEX1
+HEX1[1] << Lab8Part3:control.HEX1
+HEX1[2] << Lab8Part3:control.HEX1
+HEX1[3] << Lab8Part3:control.HEX1
+HEX1[4] << Lab8Part3:control.HEX1
+HEX1[5] << Lab8Part3:control.HEX1
+HEX1[6] << Lab8Part3:control.HEX1
+HEX2[0] << Lab8Part3:control.HEX2
+HEX2[1] << Lab8Part3:control.HEX2
+HEX2[2] << Lab8Part3:control.HEX2
+HEX2[3] << Lab8Part3:control.HEX2
+HEX2[4] << Lab8Part3:control.HEX2
+HEX2[5] << Lab8Part3:control.HEX2
+HEX2[6] << Lab8Part3:control.HEX2
+HEX3[0] << Lab8Part3:control.HEX3
+HEX3[1] << Lab8Part3:control.HEX3
+HEX3[2] << Lab8Part3:control.HEX3
+HEX3[3] << Lab8Part3:control.HEX3
+HEX3[4] << Lab8Part3:control.HEX3
+HEX3[5] << Lab8Part3:control.HEX3
+HEX3[6] << Lab8Part3:control.HEX3
+HEX4[0] << Lab8Part3:control.HEX4
+HEX4[1] << Lab8Part3:control.HEX4
+HEX4[2] << Lab8Part3:control.HEX4
+HEX4[3] << Lab8Part3:control.HEX4
+HEX4[4] << Lab8Part3:control.HEX4
+HEX4[5] << Lab8Part3:control.HEX4
+HEX4[6] << Lab8Part3:control.HEX4
+HEX5[0] << Lab8Part3:control.HEX5
+HEX5[1] << Lab8Part3:control.HEX5
+HEX5[2] << Lab8Part3:control.HEX5
+HEX5[3] << Lab8Part3:control.HEX5
+HEX5[4] << Lab8Part3:control.HEX5
+HEX5[5] << Lab8Part3:control.HEX5
+HEX5[6] << Lab8Part3:control.HEX5
+
+
+|Lab8Part4|Timer:t
+clock => out[0]~reg0.CLK
+clock => out[1]~reg0.CLK
+clock => out[2]~reg0.CLK
+clock => clock_counter[0].CLK
+clock => clock_counter[1].CLK
+clock => clock_counter[2].CLK
+clock => clock_counter[3].CLK
+clock => clock_counter[4].CLK
+clock => clock_counter[5].CLK
+clock => clock_counter[6].CLK
+clock => clock_counter[7].CLK
+clock => clock_counter[8].CLK
+clock => clock_counter[9].CLK
+clock => clock_counter[10].CLK
+clock => clock_counter[11].CLK
+clock => clock_counter[12].CLK
+clock => clock_counter[13].CLK
+clock => clock_counter[14].CLK
+clock => clock_counter[15].CLK
+clock => clock_counter[16].CLK
+clock => clock_counter[17].CLK
+clock => clock_counter[18].CLK
+clock => clock_counter[19].CLK
+clock => clock_counter[20].CLK
+clock => clock_counter[21].CLK
+clock => clock_counter[22].CLK
+clock => clock_counter[23].CLK
+clock => clock_counter[24].CLK
+clock => clock_counter[25].CLK
+clock => clock_counter[26].CLK
+clock => clock_counter[27].CLK
+clock => clock_counter[28].CLK
+clock => clock_counter[29].CLK
+clock => clock_counter[30].CLK
+clock => clock_counter[31].CLK
+direction => out.OUTPUTSELECT
+direction => out.OUTPUTSELECT
+direction => out.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control
+SW[0] => sel[0].IN6
+SW[1] => sel[1].IN6
+SW[2] => sel[2].IN6
+HEX0[0] <= HelloDecoder:display6.display
+HEX0[1] <= HelloDecoder:display6.display
+HEX0[2] <= HelloDecoder:display6.display
+HEX0[3] <= HelloDecoder:display6.display
+HEX0[4] <= HelloDecoder:display6.display
+HEX0[5] <= HelloDecoder:display6.display
+HEX0[6] <= HelloDecoder:display6.display
+HEX1[0] <= HelloDecoder:display5.display
+HEX1[1] <= HelloDecoder:display5.display
+HEX1[2] <= HelloDecoder:display5.display
+HEX1[3] <= HelloDecoder:display5.display
+HEX1[4] <= HelloDecoder:display5.display
+HEX1[5] <= HelloDecoder:display5.display
+HEX1[6] <= HelloDecoder:display5.display
+HEX2[0] <= HelloDecoder:display4.display
+HEX2[1] <= HelloDecoder:display4.display
+HEX2[2] <= HelloDecoder:display4.display
+HEX2[3] <= HelloDecoder:display4.display
+HEX2[4] <= HelloDecoder:display4.display
+HEX2[5] <= HelloDecoder:display4.display
+HEX2[6] <= HelloDecoder:display4.display
+HEX3[0] <= HelloDecoder:display3.display
+HEX3[1] <= HelloDecoder:display3.display
+HEX3[2] <= HelloDecoder:display3.display
+HEX3[3] <= HelloDecoder:display3.display
+HEX3[4] <= HelloDecoder:display3.display
+HEX3[5] <= HelloDecoder:display3.display
+HEX3[6] <= HelloDecoder:display3.display
+HEX4[0] <= HelloDecoder:display2.display
+HEX4[1] <= HelloDecoder:display2.display
+HEX4[2] <= HelloDecoder:display2.display
+HEX4[3] <= HelloDecoder:display2.display
+HEX4[4] <= HelloDecoder:display2.display
+HEX4[5] <= HelloDecoder:display2.display
+HEX4[6] <= HelloDecoder:display2.display
+HEX5[0] <= HelloDecoder:display1.display
+HEX5[1] <= HelloDecoder:display1.display
+HEX5[2] <= HelloDecoder:display1.display
+HEX5[3] <= HelloDecoder:display1.display
+HEX5[4] <= HelloDecoder:display1.display
+HEX5[5] <= HelloDecoder:display1.display
+HEX5[6] <= HelloDecoder:display1.display
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case1
+S[0] => S[0].IN3
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+E[0] => E[0].IN1
+E[1] => E[1].IN1
+E[2] => E[2].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+out[0] <= MUX3bit2to1:MUX4.out
+out[1] <= MUX3bit2to1:MUX4.out
+out[2] <= MUX3bit2to1:MUX4.out
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case1|MUX3bit2to1:MUX0
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case1|MUX3bit2to1:MUX1
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case1|MUX3bit2to1:MUX2
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case1|MUX3bit2to1:MUX3
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case1|MUX3bit2to1:MUX4
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|HelloDecoder:display1
+num[0] => Decoder1.IN2
+num[0] => Decoder2.IN1
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => Decoder2.IN0
+num[2] => display[5].DATAIN
+num[2] => display[4].DATAIN
+display[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case2
+S[0] => S[0].IN3
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+E[0] => E[0].IN1
+E[1] => E[1].IN1
+E[2] => E[2].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+out[0] <= MUX3bit2to1:MUX4.out
+out[1] <= MUX3bit2to1:MUX4.out
+out[2] <= MUX3bit2to1:MUX4.out
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case2|MUX3bit2to1:MUX0
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case2|MUX3bit2to1:MUX1
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case2|MUX3bit2to1:MUX2
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case2|MUX3bit2to1:MUX3
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case2|MUX3bit2to1:MUX4
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|HelloDecoder:display2
+num[0] => Decoder1.IN2
+num[0] => Decoder2.IN1
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => Decoder2.IN0
+num[2] => display[5].DATAIN
+num[2] => display[4].DATAIN
+display[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case3
+S[0] => S[0].IN3
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+E[0] => E[0].IN1
+E[1] => E[1].IN1
+E[2] => E[2].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+out[0] <= MUX3bit2to1:MUX4.out
+out[1] <= MUX3bit2to1:MUX4.out
+out[2] <= MUX3bit2to1:MUX4.out
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case3|MUX3bit2to1:MUX0
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case3|MUX3bit2to1:MUX1
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case3|MUX3bit2to1:MUX2
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case3|MUX3bit2to1:MUX3
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case3|MUX3bit2to1:MUX4
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|HelloDecoder:display3
+num[0] => Decoder1.IN2
+num[0] => Decoder2.IN1
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => Decoder2.IN0
+num[2] => display[5].DATAIN
+num[2] => display[4].DATAIN
+display[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case4
+S[0] => S[0].IN3
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+E[0] => E[0].IN1
+E[1] => E[1].IN1
+E[2] => E[2].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+out[0] <= MUX3bit2to1:MUX4.out
+out[1] <= MUX3bit2to1:MUX4.out
+out[2] <= MUX3bit2to1:MUX4.out
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case4|MUX3bit2to1:MUX0
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case4|MUX3bit2to1:MUX1
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case4|MUX3bit2to1:MUX2
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case4|MUX3bit2to1:MUX3
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case4|MUX3bit2to1:MUX4
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|HelloDecoder:display4
+num[0] => Decoder1.IN2
+num[0] => Decoder2.IN1
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => Decoder2.IN0
+num[2] => display[5].DATAIN
+num[2] => display[4].DATAIN
+display[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case5
+S[0] => S[0].IN3
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+E[0] => E[0].IN1
+E[1] => E[1].IN1
+E[2] => E[2].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+out[0] <= MUX3bit2to1:MUX4.out
+out[1] <= MUX3bit2to1:MUX4.out
+out[2] <= MUX3bit2to1:MUX4.out
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case5|MUX3bit2to1:MUX0
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case5|MUX3bit2to1:MUX1
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case5|MUX3bit2to1:MUX2
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case5|MUX3bit2to1:MUX3
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case5|MUX3bit2to1:MUX4
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|HelloDecoder:display5
+num[0] => Decoder1.IN2
+num[0] => Decoder2.IN1
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => Decoder2.IN0
+num[2] => display[5].DATAIN
+num[2] => display[4].DATAIN
+display[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case6
+S[0] => S[0].IN3
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+C[0] => C[0].IN1
+C[1] => C[1].IN1
+C[2] => C[2].IN1
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+E[0] => E[0].IN1
+E[1] => E[1].IN1
+E[2] => E[2].IN1
+F[0] => F[0].IN1
+F[1] => F[1].IN1
+F[2] => F[2].IN1
+out[0] <= MUX3bit2to1:MUX4.out
+out[1] <= MUX3bit2to1:MUX4.out
+out[2] <= MUX3bit2to1:MUX4.out
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case6|MUX3bit2to1:MUX0
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case6|MUX3bit2to1:MUX1
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case6|MUX3bit2to1:MUX2
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case6|MUX3bit2to1:MUX3
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|MUX6to1:case6|MUX3bit2to1:MUX4
+A[0] => out.IN0
+A[1] => out.IN0
+A[2] => out.IN0
+B[0] => out.IN0
+B[1] => out.IN0
+B[2] => out.IN0
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+S => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8Part4|Lab8Part3:control|HelloDecoder:display6
+num[0] => Decoder1.IN2
+num[0] => Decoder2.IN1
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => Decoder2.IN0
+num[2] => display[5].DATAIN
+num[2] => display[4].DATAIN
+display[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
